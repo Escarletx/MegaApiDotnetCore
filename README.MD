@@ -13,31 +13,29 @@
   >
   <br />
   <a
-    href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml"
+    href="https://github.com/Escarletx/MegaApiDotnetCore/actions/workflows/build.yml"
   >
     <img
-      src="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
+      src="https://github.com/Escarletx/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
       alt=""
     />
   </a>
-  <a href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/releases/latest">
+  <a href="https://github.com/Escarletx/MegaApiDotnetCore/releases/latest">
     <img
-      src="https://img.shields.io/github/v/release/felipeAguiarCode/MegaApiDotnetCore"
+      src="https://img.shields.io/github/v/release/Escarletx/MegaApiDotnetCore"
       alt="Latest Release"
     />
   </a>
 </h1>
 
 <p align="center">
-  This .NET Core API is designed to serve JSON formatted data about bosses from
-  the Mega Man series. It is a backend service built with .NET Core 3.1 and
-  various modern dependencies for data management and API response handling.
+  Este projeto foi criado para listar dados de bosses de Megaman através de uma API desenvolvida em .NET Core 3.1. O objetivo principal é fornecer um backend que disponibiliza dados no formato JSON.
   <br />
+
 </p>
 
 <p align="center">
-  Developed with Entity Framework Core and other modern .NET technologies, this
-  project aims to provide a robust API for accessing Mega Man robot data.
+  Desenvolvido com Entity Framework Core e outras tecnologias modernas do .NET, este projeto tem como objetivo fornecer uma API robusta para acessar dados dos robôs de Mega Man.
   <br />
 </p>
 
@@ -57,36 +55,34 @@
   <tr>
     <td>GET</td>
     <td>/api/v1/robots</td>
-    <td>Returns a list of all robots</td>
+    <td>Retorna uma lista de todos os robôs.</td>
   </tr>
   <tr>
     <td>GET</td>
     <td>/api/v1/robots/{id}</td>
-    <td>Returns details of a specific robot by ID</td>
+    <td>Retorna os detalhes de um robô específico por ID</td>
   </tr>
   <tr>
     <td>POST</td>
     <td>/api/v1/robots</td>
-    <td>Endpoint to create a new robot entry</td>
+    <td>Endpoint para criar um novo registro de robô</td>
   </tr>
 </table>
 
-## Techniques Used
+## Tecnologias utilizadas
 
 <p align="center">
-  - <b>Entity Framework Core:</b> ORM for data management.<br />
-  - <b>RESTful API Design:</b> Ensures clear and effective communication
-  endpoints.<br />
-  - <b>Dependency Injection:</b> Used throughout to promote loose coupling and
-  enhanced testability.<br />
+  - <b>Entity Framework Core:</b> ORM para gerenciamento de dados.<br />
+  - <b>Design de API RESTful:</b> Garante a comunicação clara e eficais entre os endpoints<br />
+  - <b>Injeção de dependências:</b> Utilizada em todo o projeto para promover baixo acoplamento e maior testabilidade<br />
 </p>
 
-## Dependencies
+## Dependências
 
 <table align="center">
   <tr>
-    <th>Package</th>
-    <th>Version</th>
+    <th>Pacote</th>
+    <th>Versção</th>
     <th>Link</th>
   </tr>
   <tr>
@@ -132,19 +128,16 @@
 
 ```🌐
 src
-├── 📂 Controllers      [Routes for endpoints]
-├── 📂 Models           [Database models]
-├── 📂 Services         [Business rules]
-├── 📂 Middlewares      [Intermediate functions between the HTTP request and the final server response]
-├── 📂 Database         [Structures related to the database]
-│   ├── 📂 DTOs             [Input Models and View Models (Data Transfer Objects)]
-│   ├── 📂 EntityFramework  [Files related to the ORM Entity Framework]
-│   │     ├── 📂 Context         [Entity context settings]
-│   │     ├── 📂 Migrations      [Migrations for database updates]
-│   ├── 📂 Repositories     [Repository pattern]
+├── 📂 Controllers      [Rota para os endpoints]
+├── 📂 Models           [Modelos de banco de dados]
+├── 📂 Services         [Regras de negócio]
+├── 📂 Middlewares      [Funções intermediárias entre a requisição HTTP e a resposta final do servidor]
+├── 📂 Database         [Estruturas relacionadas ao banco de dados]
+│   ├── 📂 DTOs             [Modelos de Entrada e Modelos de Visualização (Objetos de Transferência de Dados)]
+│   ├── 📂 EntityFramework  [Arquivos relacionados ao ORM Entity Framework]
+│   │     ├── 📂 Context         [Configurações do contexto da entidade]
+│   │     ├── 📂 Migrations      [Migrações para atualizações do banco de dados]
+│   ├── 📂 Repositories     [Padrão de repositório]
 ```
 
-## License This software is licensed under the terms of the [MIT]
-
-⌨️ FelipeAguiar -
-[Github](https://github.com/felipeAguiarCode)
+## Este software é licenciado sob os termos da [MIT].
